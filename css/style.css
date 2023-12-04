@@ -1,0 +1,29 @@
+#menu {
+  margin:0;
+  list-style: none;
+  width: 120px;
+  text-align: center;
+  }
+  
+  #menu li {
+  font: 90% "Arial", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  
+  #menu a {
+  background: rgba(50,50,50,0.6);
+  border-bottom: 1px solid #000000;
+  color: #ccc;
+  display: block;
+  margin: 0;
+  padding: 10px 10px;
+  text-decoration: none;
+  }
+  
+  #menu a:hover {
+  background:  rgba(50,50,50,0.6);
+  color: #fff;
+  text-shadow:#ffffff 0px 0px 5px; /*Text Glow*/
+  padding-bottom: 15px;
+  }
