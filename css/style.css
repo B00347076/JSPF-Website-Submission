@@ -1,7 +1,6 @@
-#menu {
+  #menu {
   margin:0;
   list-style: none;
-  width: 120px;
   text-align: center;
   }
   
@@ -27,3 +26,4 @@
   text-shadow:#ffffff 0px 0px 5px; /*Text Glow*/
   padding-bottom: 15px;
   }
+
