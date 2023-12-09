@@ -287,6 +287,7 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 ```
 #### Child Elements:
 ##### Building
+A simple box.
 ```typescript
 //----------------------Stand Box-------------------------\\
   function standBox(scene: Scene, width: number) {
@@ -299,6 +300,7 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 ```
 
 ##### Roof
+A textured cylinder
 ```typescript
 //---------------------Stand Roof-------------------------\\
   function standRoof(scene: Scene, width: number) {
@@ -318,6 +320,7 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 ```
 
 ##### Crowd
+A simple textured box.
 ```typescript
 //---------------------Stand Crowd------------------------\\
   function standCrowd(scene: Scene, width: number) {
@@ -357,6 +360,7 @@ Stadium stands are created with a merged mesh of 2 child elements; uprights and 
 
 #### Child Elements:
 ##### Uprights
+A simple box.
 ```typescript
 //------------------Create Uprights-----------------------\\
   function uprights(scene: Scene, z :number) {
@@ -370,6 +374,7 @@ Stadium stands are created with a merged mesh of 2 child elements; uprights and 
 ```
 
 ##### Crossbar
+A simple box.
 ```typescript
 //------------------Create Crossbars----------------------\\
   function crossbars(scene: Scene) {
@@ -405,6 +410,7 @@ Stadium floodlights are created with a merged mesh of 3 child elements; the base
 
 #### Child Elements:
 ##### Base
+A simple box.
 ```typescript
 //------------------Floodlight Base-----------------------\\
   function floodBase(scene: Scene) {
@@ -415,6 +421,7 @@ Stadium floodlights are created with a merged mesh of 3 child elements; the base
 //-------------------------END---------------------------\\
 ```
 ##### Pole
+A simple box.
 ```typescript
 //------------------Floodlight Pole-----------------------\\
   function floodPole(scene: Scene) {
@@ -425,6 +432,7 @@ Stadium floodlights are created with a merged mesh of 3 child elements; the base
 //-------------------------END----------------------------\\
 ```
 ##### Lamp
+A simple box.
 ```typescript
 //------------------Floodlight Lamp-----------------------\\
   function floodLamp(scene: Scene) {
@@ -460,7 +468,6 @@ The applied texture of the pitch has the number of light sources changed from th
   }
 //-------------------------END----------------------------\\
 ```
-<br>
 <br>
 
 ### Other
@@ -629,6 +636,8 @@ This is a simple sphere mesh wrappped in a football texture.
 ### Lighting & Camera
 
 #### Flood Lighting
+Flood lighting makes up the primary lighting for this scene. Multiple Point Lights were used, positioned just infront of the Floodlight > Lamp meshes to give the impression of illumination.
+As these are the primary lights illuminating multiple meshes, paramenters for all those meshes were passed individually to enable an control shadow generation.
 ```typescript
 //--------------------Flood Lighting----------------------\\
   function createPointLight(scene: Scene, px: number, py: number, pz: number, mesh: Mesh, mesh2: Mesh, mesh3: Mesh, mesh4: Mesh, mesh5: Mesh, mesh6: Mesh, mesh7: Mesh, mesh8: Mesh, mesh9: Mesh, mesh10: Mesh, mesh11: Mesh, mesh12: Mesh, mesh13: Mesh, mesh14: Mesh, mesh15: Mesh) {
@@ -682,7 +691,7 @@ upperRadiusLimit & lowerRadiusLimits were set to keep retain the camera within t
 <br>
 
 ### GUI
-The GUI of the game scene includes 3 elements. A basic 'Exit' button to return the user to the menu scene, a Scoreboard (for demonstration purpuses only, has no fuctionality) and the Day / Night control, which is covered in the 'Environment' section.
+The GUI of the game scene includes 3 elements. A basic 'Exit' button to return the user to the menu scene, a Scoreboard (for demonstration purposes only, has no fuctionality) and the Day / Night control, which is covered in the 'Environment' section.
 
 #### Scoreboard
 ```typescript
