@@ -176,6 +176,9 @@ Pressing the 'Press to start!' button will load the Gameplay scene. A 'Whistle' 
 For the GameScene, a simple football game simulation was created. The game involves a player controlling a 'dummy-3' model to push a football around non player controlled 'footballer' obstacles and into the goal. 
 At present, the game has no scoring or win condition.
 
+<br>
+<br>
+
 
 ### Environment
 
@@ -258,13 +261,13 @@ A GUI slider was added to this to allow varying the level of 'daylight'
   }
 //-------------------------END----------------------------\\
 ```
+<br>
+<br>
 
 
 ### Stadium
 The Stadium is the key theming feature of the game and is made up of multiple components:
 
-<br>
-<br>
 
 #### Stands
 Stadium stands are created with a merged mesh of 3 child elements; the building(box), roof and crowd:
