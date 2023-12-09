@@ -163,6 +163,7 @@ Pressing the 'Press to start!' button will load the Gameplay scene. A 'Whistle' 
 //-------------------------END----------------------------\\
 ```
 
+
 ## GameScene
 For the GameScene, a simple football game simulation was created. The game involves a player controlling a 'dummy-3' model to push a football around non player controlled 'footballer' obstacles and into the goal. 
 At present, the game has no scoring or win condition.
@@ -250,7 +251,8 @@ A GUI slider was added to this to allow varying the level of 'daylight'
 //-------------------------END----------------------------\\
 ```
 
-## Stadium
+
+### Stadium
 The Stadium is the key theming feature of the game and is made up of multiple components:
 
 
@@ -273,7 +275,7 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 ```
 ##### Child Elements:
 
-##### Building
+&nbsp;&nbsp;##### Building
 ```typescript
 //----------------------Stand Box-------------------------\\
   function standBox(scene: Scene, width: number) {
@@ -285,7 +287,7 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 //-------------------------END----------------------------\\
 ```
 
-##### Roof
+&nbsp;&nbsp;##### Roof
 ```typescript
 //---------------------Stand Roof-------------------------\\
   function standRoof(scene: Scene, width: number) {
@@ -304,7 +306,7 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 //-------------------------END----------------------------\\
 ```
 
-##### Crowd
+&nbsp;&nbsp;##### Crowd
 ```typescript
 //---------------------Stand Crowd------------------------\\
   function standCrowd(scene: Scene, width: number) {
