@@ -404,7 +404,7 @@ Stadium floodlights are created with a merged mesh of 3 child elements; the base
 //-------------------------END----------------------------\\
 ```
 
-##### Child Elements:
+#### Child Elements:
 ##### Base
 ```typescript
 //------------------Floodlight Base-----------------------\\
@@ -461,13 +461,13 @@ The applied texture of the pitch has the number of light sources changed from th
 //-------------------------END----------------------------\\
 ```
 
-#### Other
+### Other
 Other elements of the stadium include the pitch side barriers and corner flags. Code for these is ommited here as they are pretty self explanatory simple box meshes.
 
 
 
 
-#### Game Play
+### Game Play
 
 ##### Player Character
 The Player Character in the game is an animated 'dummy-3' model.
@@ -599,7 +599,7 @@ For the rest of the team players, a simplified version of the player character c
 ```
 
 
-##### The Ball
+#### The Ball
 Of course, a game of football wouldn't be complete without the ball.
 This is a simple sphere mesh wrappped in a football texture.
 ```typescript
@@ -621,7 +621,7 @@ This is a simple sphere mesh wrappped in a football texture.
 
 #### Lighting & Camera
 
-##### Flood Lighting
+#### Flood Lighting
 ```typescript
 //--------------------Flood Lighting----------------------\\
   function createPointLight(scene: Scene, px: number, py: number, pz: number, mesh: Mesh, mesh2: Mesh, mesh3: Mesh, mesh4: Mesh, mesh5: Mesh, mesh6: Mesh, mesh7: Mesh, mesh8: Mesh, mesh9: Mesh, mesh10: Mesh, mesh11: Mesh, mesh12: Mesh, mesh13: Mesh, mesh14: Mesh, mesh15: Mesh) {
