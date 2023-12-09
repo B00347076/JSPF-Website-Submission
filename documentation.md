@@ -6,6 +6,7 @@ The element consists of two scenes:
 
 1. MenuScene
 2. GameScene
+<br>
 
 ## Global Elements
 The opening code for all elements involves the import of the BabylonJS dependency modules. Within this section we include the import and initialisation of the Havok physics engine:
@@ -66,6 +67,8 @@ import {
 //-------------------IMPORTS  -  END------------------------\\
 //----------------------------------------------------------\\
 ```
+<br>
+<br>
 
 ## Menu Scene
 The Menu scene is a simple adaptation of Element 4. On loading, the user is presented with the game title and a 'Start Game' button. This menu is presented within a 'Skybox', viewed using an 'ArcRotate camera' to provide a manipulatable 'endless grass' environment, fitting to the theme of the game:
@@ -162,6 +165,8 @@ Pressing the 'Press to start!' button will load the Gameplay scene. A 'Whistle' 
   }
 //-------------------------END----------------------------\\
 ```
+<br>
+<br>
 
 
 ## GameScene
@@ -250,11 +255,15 @@ A GUI slider was added to this to allow varying the level of 'daylight'
   }
 //-------------------------END----------------------------\\
 ```
+<br>
+<br>
 
 
 ### Stadium
 The Stadium is the key theming feature of the game and is made up of multiple components:
 
+<br>
+<br>
 
 #### Stands
 Stadium stands are created with a merged mesh of 3 child elements; the building(box), roof and crowd:
@@ -275,7 +284,7 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 ```
 ##### Child Elements:
 
-&nbsp;&nbsp;##### Building
+##### Building
 ```typescript
 //----------------------Stand Box-------------------------\\
   function standBox(scene: Scene, width: number) {
@@ -287,7 +296,7 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 //-------------------------END----------------------------\\
 ```
 
-&nbsp;&nbsp;##### Roof
+##### Roof
 ```typescript
 //---------------------Stand Roof-------------------------\\
   function standRoof(scene: Scene, width: number) {
@@ -306,7 +315,7 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 //-------------------------END----------------------------\\
 ```
 
-&nbsp;&nbsp;##### Crowd
+##### Crowd
 ```typescript
 //---------------------Stand Crowd------------------------\\
   function standCrowd(scene: Scene, width: number) {
@@ -323,6 +332,8 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
   }
 //-------------------------END----------------------------\\
 ```
+<br>
+<br>
 
 
 #### Goals
