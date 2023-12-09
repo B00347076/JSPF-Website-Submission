@@ -175,7 +175,6 @@ Pressing the 'Press to start!' button will load the Gameplay scene. A 'Whistle' 
 ## GameScene
 For the GameScene, a simple football game simulation was created. The game involves a player controlling a 'dummy-3' model to push a football around non player controlled 'footballer' obstacles and into the goal. 
 At present, the game has no scoring or win condition.
-
 ### Environment
 
 #### Terrain
@@ -263,7 +262,11 @@ A GUI slider was added to this to allow varying the level of 'daylight'
 
 ### Stadium
 The Stadium is the key theming feature of the game and is made up of multiple components:
-
+1. Stands
+2. Goals
+3. Floodlights
+4. Pitch
+5. Other
 
 ### Stands
 Stadium stands are created with a merged mesh of 3 child elements; the building(box), roof and crowd:
@@ -459,6 +462,7 @@ The applied texture of the pitch has the number of light sources changed from th
 ```
 <br>
 <br>
+
 ### Other
 Other elements of the stadium include the pitch side barriers and corner flags. Code for these is ommited here as they are pretty self explanatory simple box meshes.
 
@@ -622,7 +626,7 @@ This is a simple sphere mesh wrappped in a football texture.
 <br>
 <br>
 
-#### Lighting & Camera
+### Lighting & Camera
 
 #### Flood Lighting
 ```typescript
@@ -677,13 +681,66 @@ upperRadiusLimit & lowerRadiusLimits were set to keep retain the camera within t
 <br>
 <br>
 
-#### GUI
+### GUI
 The GUI of the game scene includes 3 elements. A basic 'Exit' button to return the user to the menu scene, a Scoreboard (for demonstration purpuses only, has no fuctionality) and the Day / Night control, which is covered in the 'Environment' section.
+
+#### Scoreboard
+```typescript
+//--------------------Score Board-----------------------\\
+  function createScoreBoard(scene: Scene, name: string, index: string, x: string, y: string, advtex) {
+    let score = GUI.Button.CreateSimpleButton(name, index);
+      score.left = x;
+      score.top = y;
+      score.width = "300px";
+      score.height = "100px";
+      score.color = "white";
+      score.cornerRadius = 30;
+      score.background = "rgba(0, 0, 0, 0.3)";
+      score.fontSize ="90px";
+      score.fontStyle ="bold";
+  
+    advtex.addControl(score);
+    return score;
+  }
+//------------------------END-----------------------------\\
+```
+
+
+#### Exit Button
+```typescript
+//----------------------Menu Button-----------------------\\
+  function createSceneButton(scene: Scene, name: string, index: string, x: string, y: string, advtex) {
+    let button = GUI.Button.CreateSimpleButton(name, index);
+      button.left = x;
+      button.top = y;
+      button.width = "100px";
+      button.height = "40px";
+      button.color = "white";
+      button.cornerRadius = 20;
+      button.background = "rgba(255, 0, 0, 0.3)";
+        
+      const buttonClick = new Sound("MenuClickSFX", "./audio/whistle.wav", scene, null, {
+        loop: false,
+        autoplay: false,
+      });
+
+      button.onPointerUpObservable.add(function() {
+        console.log("THE BUTTON HAS BEEN CLICKED");
+        buttonClick.play();
+        setSceneIndex(0);
+      });
+
+    advtex.addControl(button);
+    return button;
+  }
+//-------------------------END--------------------------\\
+```
 
 <br>
 <br>
 
 ### Render
+The Render is the final step which maps the loading of the previously mentioned functions.
 ```typescript
 //----------------------------------------------------------\\
 //-------------------RENDER  -  START-----------------------\\
