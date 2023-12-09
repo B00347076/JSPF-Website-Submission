@@ -694,6 +694,7 @@ upperRadiusLimit & lowerRadiusLimits were set to keep retain the camera within t
 The GUI of the game scene includes 3 elements. A basic 'Exit' button to return the user to the menu scene, a Scoreboard (for demonstration purposes only, has no fuctionality) and the Day / Night control, which is covered in the 'Environment' section.
 
 #### Scoreboard
+Defined as a simple button, to allow for score reporting in later iterations.
 ```typescript
 //--------------------Score Board-----------------------\\
   function createScoreBoard(scene: Scene, name: string, index: string, x: string, y: string, advtex) {
@@ -716,6 +717,7 @@ The GUI of the game scene includes 3 elements. A basic 'Exit' button to return t
 
 
 #### Exit Button
+A simple button.
 ```typescript
 //----------------------Menu Button-----------------------\\
   function createSceneButton(scene: Scene, name: string, index: string, x: string, y: string, advtex) {
