@@ -176,10 +176,6 @@ Pressing the 'Press to start!' button will load the Gameplay scene. A 'Whistle' 
 For the GameScene, a simple football game simulation was created. The game involves a player controlling a 'dummy-3' model to push a football around non player controlled 'footballer' obstacles and into the goal. 
 At present, the game has no scoring or win condition.
 
-<br>
-<br>
-
-
 ### Environment
 
 #### Terrain
@@ -437,7 +433,8 @@ Stadium floodlights are created with a merged mesh of 3 child elements; the base
   }
 //-------------------------END----------------------------\\
 ```
-
+<br>
+<br>
 
 ### Pitch
 A key feature of the stadium, the pitch is the games standard ground plane.
@@ -460,12 +457,14 @@ The applied texture of the pitch has the number of light sources changed from th
   }
 //-------------------------END----------------------------\\
 ```
-
+<br>
+<br>
 ### Other
 Other elements of the stadium include the pitch side barriers and corner flags. Code for these is ommited here as they are pretty self explanatory simple box meshes.
 
 
-
+<br>
+<br>
 
 ### Game Play
 
@@ -563,6 +562,8 @@ For the purposes of this demonstration, only idle and run  movements/animations 
   }
 //-------------------------END----------------------------\\
 ```
+<br>
+
 ##### Non-Player Characters
 For the rest of the team players, a simplified version of the player character code is used with keybindings for movement removed, and animations limited to idle. For customisation, colour paramenters are passable to allow for team variation.
 
@@ -597,7 +598,7 @@ For the rest of the team players, a simplified version of the player character c
   }
 //-------------------------END----------------------------\\
 ```
-
+<br>
 
 #### The Ball
 Of course, a game of football wouldn't be complete without the ball.
@@ -618,6 +619,8 @@ This is a simple sphere mesh wrappped in a football texture.
   }
 //-------------------------END----------------------------\\
 ```
+<br>
+<br>
 
 #### Lighting & Camera
 
@@ -671,10 +674,14 @@ upperRadiusLimit & lowerRadiusLimits were set to keep retain the camera within t
   }
   //-------------------------END----------------------------\\
 ```
+<br>
+<br>
 
 #### GUI
 The GUI of the game scene includes 3 elements. A basic 'Exit' button to return the user to the menu scene, a Scoreboard (for demonstration purpuses only, has no fuctionality) and the Day / Night control, which is covered in the 'Environment' section.
 
+<br>
+<br>
 
 ### Render
 ```typescript
