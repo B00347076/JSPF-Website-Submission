@@ -1,5 +1,5 @@
 
-# JavaScript Games: Programming Fundamentals - (COMP 090909)
+# JavaScript Games: Programming Fundamentals
 
 <br>
 
