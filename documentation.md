@@ -287,7 +287,6 @@ Stadium stands are created with a merged mesh of 3 child elements; the building(
 //-------------------------END----------------------------\\
 ```
 ##### Child Elements:
-
 ##### Building
 ```typescript
 //----------------------Stand Box-------------------------\\
@@ -358,7 +357,6 @@ Stadium stands are created with a merged mesh of 2 child elements; uprights and 
 ```
 
 ##### Child Elements:
-
 ##### Uprights
 ```typescript
 //------------------Create Uprights-----------------------\\
@@ -407,7 +405,6 @@ Stadium floodlights are created with a merged mesh of 3 child elements; the base
 ```
 
 ##### Child Elements:
-
 ##### Base
 ```typescript
 //------------------Floodlight Base-----------------------\\
@@ -418,7 +415,6 @@ Stadium floodlights are created with a merged mesh of 3 child elements; the base
   }
 //-------------------------END---------------------------\\
 ```
-
 ##### Pole
 ```typescript
 //------------------Floodlight Pole-----------------------\\
@@ -429,7 +425,6 @@ Stadium floodlights are created with a merged mesh of 3 child elements; the base
   }
 //-------------------------END----------------------------\\
 ```
-
 ##### Lamp
 ```typescript
 //------------------Floodlight Lamp-----------------------\\
