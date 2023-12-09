@@ -67,8 +67,10 @@ import {
 //-------------------IMPORTS  -  END------------------------\\
 //----------------------------------------------------------\\
 ```
-###
-###
+
+<br>
+<br>
+
 
 ## Menu Scene
 The Menu scene is a simple adaptation of Element 4. On loading, the user is presented with the game title and a 'Start Game' button. This menu is presented within a 'Skybox', viewed using an 'ArcRotate camera' to provide a manipulatable 'endless grass' environment, fitting to the theme of the game:
@@ -166,6 +168,8 @@ Pressing the 'Press to start!' button will load the Gameplay scene. A 'Whistle' 
 //-------------------------END----------------------------\\
 ```
 
+<br>
+<br>
 
 
 ## GameScene
@@ -259,7 +263,8 @@ A GUI slider was added to this to allow varying the level of 'daylight'
 ### Stadium
 The Stadium is the key theming feature of the game and is made up of multiple components:
 
-
+<br>
+<br>
 
 #### Stands
 Stadium stands are created with a merged mesh of 3 child elements; the building(box), roof and crowd:
@@ -377,7 +382,8 @@ Stadium stands are created with a merged mesh of 2 child elements; uprights and 
   }
 //-------------------------END----------------------------\\
 ```
-
+<br>
+<br>
 
 #### Floodlight
 Stadium floodlights are created with a merged mesh of 3 child elements; the base, pole and lamp:
