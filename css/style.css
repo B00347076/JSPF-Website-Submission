@@ -26,4 +26,43 @@
   text-shadow:#ffffff 0px 0px 5px; /*Text Glow*/
   padding-bottom: 15px;
   }
+  body {
+    background-image: url("/assets/pitchbg.jpg");
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+  }
+
+  .col-sm-3 {
+    background-color: rgba(50,50,50,0.8);
+    padding-top: 30px;
+  }
+
+  .col-sm-8 {
+    background-color: rgba(50,50,50,0.6);
+    padding-top: 0px;
+  }
+
+  .jumbotron {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: rgba(50,50,50,0.6);
+    width: 98%;
+  }
+
+  .pretextspacer {
+    height: 150px;
+    width: 98%;
+  }
+
+  .foot {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(50,50,50,0.6);
+  }
 
